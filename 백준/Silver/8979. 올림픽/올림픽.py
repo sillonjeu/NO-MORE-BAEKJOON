@@ -19,7 +19,7 @@ rank = 1
 for index, item in enumerate(arr):
     if check[1] != item[1] or check[2] != item[2] or check[3] != item[3]:
         rank = index + 1
-        for i in range(3):
+        for i in range(1, 4):
             check[i] = item[i]
     
     if int(item[0]) == int(K):
