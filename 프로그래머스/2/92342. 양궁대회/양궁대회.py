@@ -5,7 +5,7 @@ def solution(n, info):
     def BT(arr, count, spot):
         nonlocal result, MAX
 
-        # 마지막 칸 도달 직전이면, 남은 화살 전부 마지막 칸(0점)에 넣고 채점
+        # 마지막 칸에 남은 화살 전부 넣기
         if spot == len(info) - 1:
             arr.append(count)       
             BT(arr, 0, spot + 1)
